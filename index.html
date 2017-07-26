@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>London Brochure</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Griffy|Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> </head>
+
+<body>
+    <header id="hero-image"> 
+        <h1>Discover London</h1>
+    </header>
+    <nav>
+        <ul>
+            <!-- LI first, a second -->
+            <li> <a class="btn" href="https://tfl.gov.uk/maps/track/tube">Tube Map</a> </li>
+            <li> <a class="btn" href="http://ojp.nationalrail.co.uk/service/planjourney/search">Rail Enquiries</a> </li>
+            <li> <a class="btn" href="http://www.harrods.com/content/the-store/restaurants/the-tea-room">Afternoon Tea Menu</a> </li>
+            <li> <a class="btn" href="#london_southbank">Southbank Walk</a> </li>
+            <li> <a class="btn" href="#london_greenwich">Greenwich</a> </li>
+            <li> <a class="btn" href="#london_westminster">Westminster</a> </li>
+            <li> <a class="btn" href="#london_knightsbridge">Knightsbridge</a> </li>
+        </ul>
+    </nav>
+    <button>Hide/Show Navigation</button>
+    <!-- Wrap all of this inside a <main> and then make rows of image and text instead of one column of images and one column of text. -->
+    <main>
+        <article class="containerImages"> 
+            <img src="img/tube.jpg" alt="Tube Central Line">
+            <div id="containerTextRight">
+                <h2 id="london_waterloo">Waterloo Station</h2>
+                <p>Take Southwest trains from Staines to <span class="sight">London Waterloo,</span> Day Travelcard required (journey time approx. 35mins)
+                    <br> Exit Waterloo onto the <span class="sight">Southbank</span>
+                    <br> Begin walking in the direction of <span class="sight">Tower Bridge,</span> opportunities for photos along the way</p>
+            </div>
+        </article>
+        
+        <article class="containerImages containerImagesRight"> 
+            <img src="img/londonEye.jpg" alt="London Eye">
+            <div id="containerText">
+                <h2 id="london_southbank">Southbank Walk</h2>
+                <p>Sights include: <span class="sight">Big Ben &amp; Parliament, London Eye, St. Paul’s Cathedral, Shakespeare’s Globe Theatre, HMS Belfast, Tower Bridge &amp; Tower of London</span>
+                    <br> Optional stop at the <span class="sight">Tate Modern</span> for 360 degree views across London and coffee
+                    <br> <span class="sight">Southwark Borough Market</span>
+                    <br> Take tube, Jubilee Line, from London Bridge to Canary Wharf
+                    <br> Take DLR, from Canary Wharf to Cutty Sark</p>
+            </div>
+        </article>
+        
+        <article class="containerImages"> <img src="img/greenwichLawn.jpg" alt="Greenwich, London">
+            <div id="containerTextRight">
+                <h2 id="london_greenwich">Greenwich</h2>
+                <p>Light Lunch at 'The Green Cafe' in Greenwich
+                    <br> Explore Greenwich: <span class="sight">Cutty Sark, see where time began, Greenwich market &amp; boutique shops</span>
+                    <br> Take DLR from Cutty Sark back to Canary Wharf
+                    <br> Take tube, Jubilee Line, from Canary Wharf to Westminster</p>
+            </div>
+        </article>
+
+        <article class="containerImages containerImagesRight"> <img src="img/bigBen.jpeg" alt="Big Ben">
+            <div id="containerText">
+                <h2 id="london_westminster">Westminster</h2>
+                <p>Closer look at <span class="sight">Big Ben &amp; Parliament, Westminster Abbey</span>
+                    <br> Walk along Whitehall, passing <span class="sight">10 Downing Street</span>
+                    <br> Walk through Horse Guards Parade into St. James’ Park
+                    <br> Walk through the park to join The Mall, continue up The Mall to <span class="sight">Buckingham Palace</span></p>
+            </div>
+        </article>
+        <article class="containerImages"> <img src="img/harrods.jpg" alt="Harrods Shop, Knightsbridge">
+            <div id="containerTextRight">
+                <h2 id="london_knightsbridge">Knightsbridge</h2>
+                <p>Walk along Constitutional Hill to Hyde Park Corner, continue along the road to <span class="sight">Harrods</span>
+                    <br> Explore <span class="sight">Harrods</span> with optional stop for Afternoon Tea
+                    <br> Take tube, Piccadilly Line, from Knightsbridge to Green Park
+                    <br> Take tube, Jubilee Line, from Green Park to Waterloo
+                    <br> Train back to Staines</p>
+            </div>
+        </article>
+    </main>
+    
+    <div class="new-row"> 
+        <div>
+            <img class="suburbanLondon" src="img/eastLondon.jpg" alt="East London"> 
+        </div>
+        
+        <div class="stPauls">
+        <img class="suburbanLondon" src="img/stPaulsCathedral.jpg" alt="St. Paul's Cathedral">
+        </div>
+    
+        <div>
+        <img class="suburbanLondon" src="img/suburbianHouses.jpg" alt="Suburbian Houses"> 
+        </div>
+    
+    </div>
+    
+    <!-- Change everything that could be semantic to be semantic, i.e. class="footer" to <footer> -->
+    <footer>
+        <p class="footerParagraph">NB. To follow this route takes approx. 8 hours in total, good walking shoes highly recommended.
+            <br> Please be aware British weather is very unpredictable, dress appropriately</p>
+        <p>&copy; Elizabeth Mawer 2017</p>
+    </footer>
+    <script src="js/vendor/jquery-3.2.0.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+    
+
+</html>

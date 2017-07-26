@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*************
+General Layout
+*************/
+    html, body {
+      box-sizing: border-box;
+      font-family: 'Griffy', cursive;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    h1, h2, a {
+      font-family: 'Oswald', sans-serif;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+/* DESKTOP */
+    
+    /******
+    Header
+    ******/   
+
+  header#hero-image {
+      background: url('../img/londonSkyline.jpg') no-repeat;
+      background-size: cover;     
+      width: 100%;
+      height: auto;
+      min-height: 500px;
+      position: relative;
+    }
+
+
+/*********
+Navigation
+**********/
+
+    nav {
+      list-style: none;
+      background-color: #666699;
+    }
+
+    nav li {
+      display: inline-block;
+      padding: 20px 15px; 
+      margin-left: 20px;     
+    }
+
+    nav a { 
+      color: #df80ff; 
+      font-size: 20px;
+      font-family:'Oswald', sans-serif;    
+    }
+
+    a {
+      text-decoration: none;    
+    }
+
+    a:hover {
+        color: #ccccff;
+    }
+
+button {
+    font-size: 1.3em;
+    color: #666699;
+    background-color: #ccccff;
+    border: solid 2px #ccccff;
+    width: 100%;
+}
+
+/******
+Images
+******/
+
+    .containerImages {
+        clear: both;
+    }
+
+    .containerImages img {
+        float: left;
+        width: 35%;
+        margin-left: 6%;
+        padding: 1.5em;
+        border: 8px solid #666699;
+        /*-moz-border-image: -moz-linear-gradient(top, #ffbf00 0%, #ff0000 100%);
+        -webkit-border-image: -webkit-linear-gradient(top, #ffbf00 0%, #ff0000 100%);
+        border-image: linear-gradient(to bottom, #ffbf00 0%, #ff0000 100%);
+        border-image-slice: 1;*/
+    }
+
+    .containerImagesRight img {
+        float: right;
+        margin-right: 6%;
+        padding: 1.5em;
+    }
+
+/******
+Text
+******/
+
+    h1 {
+        position: absolute;
+        color: #df80ff;
+        font-weight: bold;
+        font-size: 50px;
+        margin-top: 4%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #containerText {
+        margin-left: 6%;
+    }
+
+    #containerTextRight {
+        margin-left: 50%;
+        margin-right: 6%;
+    }
+
+    h2 {
+      color: #666699;
+      font-size: 30px;
+    }
+
+    p {
+      line-height: 2em;
+    }
+
+    .sight {
+      color: #666699;
+      font-weight: bold;
+    }
+
+/********* 
+Alignment
+**********/
+
+    .new-row {
+        clear: left;
+    }
+    .new-row div {
+        overflow: hidden;
+        float: left;
+        width: 33.33%;
+        padding: 1em;
+    }
+
+.stPauls {
+    display: inline-block;
+}
+
+    #london_waterloo {    
+      margin-top: 60px;    
+    }
+
+    #london_southbank {   
+      margin-top: 250px;
+    }
+
+    #london_greenwich {    
+      margin-top: 300px;
+    }
+
+    #london_westminster {   
+      margin-top: 200px;
+    }
+
+    #london_knightsbridge {  
+      margin-top: 250px;
+    }
+
+/********************
+Black & White photos
+********************/
+
+    .suburbanLondon {
+        padding: 1.5em;
+        border: 8px solid #666699;
+        margin-top: 20px;
+    }
+
+/******
+Footer
+******/
+
+    footer {
+      margin-top: 150px;
+      clear: both;
+      text-align: center;
+    }
+
+    .footerParagraph {
+      font-weight: bold;
+    }
+
+
+/* TABLET CODE */ 
+
+@media screen and (max-width: 1024px) {
+        
+    .containerImages img {
+        width: 50%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .containerImagesRight img {
+        width: 50%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+    
+    .stPauls {
+        display: none;
+    }
+    
+    .new-row div {
+        width: 50%;
+    }
+
+ /*MOBILE CODE*/ 
+
+@media screen and (max-width: 768px) {
+    
+    header#hero-image {
+      background: url('../img/theShardLondon.jpg') no-repeat;
+      background-size: cover;     
+      width: 100%;
+      height: auto;
+      min-height: 700px;
+      position: relative;
+    }
+    
+    h1 {
+        margin-top: 50%;
+        color: #fff;
+    }
+        
+ /*.verticalTextLeft {
+        color: #666699;
+        width: 1px;
+        word-wrap: break-word;
+        margin-left: 5%;
+    }
+
+    .verticalTextRight {
+            color: #666699;
+            width: 1px;
+            word-wrap: break-word;
+            margin-right: 5%;
+        }*/
+
+    
+      nav li {
+      display: block;
+      width: 100%; 
+      text-align: center;
+    }
+
+    nav a {  
+      font-weight: bold;
+    }
+
+    .containerImages img {
+        clear: both;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    
+    .containerImages:nth-child(even) {
+        margin-right: 4%;
+    }
+    
+    .containerImages:nth-child(odd) {
+        margin-left: 4%;
+    }
+    
+    #london_southbank {
+        margin-top: 10%;  
+        }
+
+    #london_greenwich {
+        margin-top: 10%;   
+        }
+
+    #london_westminster {
+        margin-top: 10%;   
+        }
+
+    #london_knightsbridge {
+        margin-top: 10%;   
+        }
+
+    #containerText {
+        width: 90%;
+        margin-left: 6%;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    #containerTextRight {
+        width: 90%;
+        margin-left: 6%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .new-row div {
+        width: 90%;
+        margin-left: 4%;
+    }  
+    
+    .stPauls {
+        display: block;
+    }
+}
+    
+
+
+
